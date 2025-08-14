@@ -14,8 +14,8 @@ Este repositorio contiene una carpeta llamada "ejercicios" donde encotrarás un 
 
 ## Ejercicios
 
-### Ejercicio 1: Crear carpetas
-Aprende como organizar sus proyectos.
+### Ejercicio 1: Uso de metadatos
+Aprende colocar y utilizar etiquetas de metadatos para documentar y mejorar la accesibilidad de tu página web.
 
 ### Ejercicio 2: Punto de Venta
 Aprende a crear al estructura de carpetas base para un proyecto de tienda online.

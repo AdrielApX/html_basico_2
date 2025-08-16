@@ -8,19 +8,29 @@
 		"vscode": {
 			"extensions": [
 				"bierner.markdown-mermaid",
-				"PKief.material-icon-theme"
-			]
+				"PKief.material-icon-theme",
+				"ritwickdey.LiveServer",
+				"ionutvmi.path-autocomplete"
+			],
+			"settings": {
+				"liveServer.settings.port": 5500,
+				"liveServer.settings.donotShowInfoMsg": true,
+				"liveServer.settings.root": "/workspaces/template-html"
+			}
 		}
-	}
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [5500],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
+	"postCreateCommand": "[ -d node_modules ] || npm install && npm install -g http-server",
+	
+	// Use 'postStartCommand' to run commands after the container starts.
+	"postStartCommand": "nohup http-server -p 5500 /workspaces/template-html -c-1 > /dev/null 2>&1 & sleep 2 && echo '🚀 Servidor iniciado automáticamente en: http://localhost:5500'"
 
 	// Configure tool-specific properties.
 	// "customizations": {},

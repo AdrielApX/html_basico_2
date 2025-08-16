@@ -5,7 +5,7 @@ Crear un archivo HTML básico y agregar varias etiquetas de metadato en la secci
 
 ## Instrucciones
 
-1. Crear la carpeta `src/metadatos`, si no existe, crea un archivo llamado `index.html` dentro de esta carpeta.
+1. Crear la carpeta `docs/metadatos`, si no existe, crea un archivo llamado `index.html` dentro de esta carpeta.
 2. Dentro de `index.html`, escribe la estructura básica de un documento HTML.
 3. Agrega al menos las siguientes etiquetas de metadato dentro de la sección `<head>`:
 
@@ -22,7 +22,7 @@ Crear un archivo HTML básico y agregar varias etiquetas de metadato en la secci
 ## Estructura final esperada
 
 ```
-src/
+docs/
 └── metadatos/
     └── index.html
 ```

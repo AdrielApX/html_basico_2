@@ -5,7 +5,7 @@ Crear un archivo HTML básico y agregar varias etiquetas de metadato en la secci
 
 ## Requisitos
 
-1. Debe existir una carpeta `src/metadatos`, del ejercicio anterior, y un archivo llamado `index.html` dentro de esta carpeta.
+1. Debe existir una carpeta `docs/metadatos`, del ejercicio anterior, y un archivo llamado `index.html` dentro de esta carpeta.
 2. El archivo `index.html`, debe tener la estructura básica de un documento HTML.
 3. Con las etiquetas de metadato dentro de la sección `<head>`:
 
@@ -15,7 +15,7 @@ Crear un archivo HTML básico y agregar varias etiquetas de metadato en la secci
 5. Debes incluir un favicon en el documento HTML. El favicon debe ser un archivo llamado `favicon.ico` y debe estar en la misma carpeta que el archivo `index.html`.
 
 ## Instrucciones
-1. Crea el archivo `servicios.html` dentro de la carpeta `src/metadatos
+1. Crea el archivo `servicios.html` dentro de la carpeta `docs/metadatos
 2. Abre el archivo `servicios.html` en tu editor de código. 
 3. Agrega la estructura básica de un documento HTML.
 4. Dentro de la sección `<head>`, agrega las siguientes etiquetas de metadato:
@@ -26,7 +26,7 @@ Crear un archivo HTML básico y agregar varias etiquetas de metadato en la secci
 ## Estructura final esperada
 
 ```
-src/
+docs/
 └── metadatos/
     └── index.html
     └── favicon.ico

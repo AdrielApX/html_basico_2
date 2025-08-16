@@ -4,16 +4,16 @@ const { JSDOM } = require('jsdom');
 
 describe('Ejercicio 6: Metadatos HTML', () => {
   const rootPath = path.join(__dirname, '../../');
-  const filePath = path.join(rootPath, 'src', 'metadatos', 'index.html');
+  const filePath = path.join(rootPath, 'docs', 'metadatos', 'index.html');
   
-  test('La carpeta src/metadatos debe existir', () => {
-    const srcPath = path.join(rootPath, 'src/metadatos');    
-    expect(fs.existsSync(srcPath)).toBe(true);    
-    const stats = fs.statSync(srcPath);
+  test('La carpeta docs/metadatos debe existir', () => {
+    const docsPath = path.join(rootPath, 'docs/metadatos');    
+    expect(fs.existsSync(docsPath)).toBe(true);    
+    const stats = fs.statSync(docsPath);
     expect(stats.isDirectory()).toBe(true);
   });
   
-  test('El archivo src/metadatos/index.html debe existir', () => {    
+  test('El archivo docs/metadatos/index.html debe existir', () => {    
     expect(fs.existsSync(filePath)).toBe(true);        
     const stats = fs.statSync(filePath);
     expect(stats.isFile()).toBe(true);

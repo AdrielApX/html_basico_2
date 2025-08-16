@@ -4,24 +4,24 @@ const { JSDOM } = require('jsdom');
 
 describe('Ejercicio 7: Metadatos HTML con Favicon', () => {
   const rootPath = path.join(__dirname, '../../');
-  const indexFilePath = path.join(rootPath, 'src', 'metadatos', 'index.html');
-  const serviciosFilePath = path.join(rootPath, 'src', 'metadatos', 'servicios.html');
-  const faviconPath = path.join(rootPath, 'src', 'metadatos', 'favicon.ico');
+  const indexFilePath = path.join(rootPath, 'docs', 'metadatos', 'index.html');
+  const serviciosFilePath = path.join(rootPath, 'docs', 'metadatos', 'servicios.html');
+  const faviconPath = path.join(rootPath, 'docs', 'metadatos', 'favicon.ico');
   
-  test('La carpeta src/metadatos debe existir', () => {
-    const srcPath = path.join(rootPath, 'src/metadatos');    
-    expect(fs.existsSync(srcPath)).toBe(true);    
-    const stats = fs.statSync(srcPath);
+  test('La carpeta docs/metadatos debe existir', () => {
+    const docsPath = path.join(rootPath, 'docs/metadatos');    
+    expect(fs.existsSync(docsPath)).toBe(true);    
+    const stats = fs.statSync(docsPath);
     expect(stats.isDirectory()).toBe(true);
   });
   
-  test('El archivo src/metadatos/index.html debe existir', () => {    
+  test('El archivo docs/metadatos/index.html debe existir', () => {    
     expect(fs.existsSync(indexFilePath)).toBe(true);        
     const stats = fs.statSync(indexFilePath);
     expect(stats.isFile()).toBe(true);
   });
 
-  test('El archivo src/metadatos/servicios.html debe existir', () => {    
+  test('El archivo docs/metadatos/servicios.html debe existir', () => {    
     expect(fs.existsSync(serviciosFilePath)).toBe(true);        
     const stats = fs.statSync(serviciosFilePath);
     expect(stats.isFile()).toBe(true);

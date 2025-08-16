@@ -14,8 +14,8 @@
 			],
 			"settings": {
 				"liveServer.settings.port": 5500,
-				"liveServer.settings.donotShowInfoMsg": true,
-				"liveServer.settings.root": "/workspaces/template-html"
+				"liveServer.settings.donotShowInfoMsg": true,		
+				"liveServer.settings.root": "docs/"
 			}
 		}
 	},
